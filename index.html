@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select2 Example</title>
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h3>Multi Select & Search Tool</h3>
+    <!-- Multi-select field -->
+    <label for="multiSelect">Sample Search Fruit Name:</label>
+    <select id="multiSelect" multiple="multiple" style="width: 50%">
+        <option value="apple">Apple</option>
+        <option value="orange">Orange</option>
+        <option value="banana">Banana</option>
+        <option value="grape">Grape</option>
+        <option value="pear">Pear</option>
+        <option value="mango">Mango</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="pineapple">Pineapple</option>
+        <option value="kiwi">Kiwi</option>
+        <option value="blueberry">Blueberry</option>
+        <option value="cherry">Cherry</option>
+        <option value="watermelon">Watermelon</option>
+        <option value="peach">Peach</option>
+        <option value="plum">Plum</option>
+        <option value="papaya">Papaya</option>
+        <option value="apricot">Apricot</option>
+        <option value="blackberry">Blackberry</option>
+        <option value="pomegranate">Pomegranate</option>
+        <option value="lime">Lime</option>
+        <option value="lemon">Lemon</option>
+        <option value="fig">Fig</option>
+        <option value="coconut">Coconut</option>
+        <option value="guava">Guava</option>
+        <option value="raspberry">Raspberry</option>
+        <option value="nectarine">Nectarine</option>
+        <option value="tangerine">Tangerine</option>
+        <option value="jackfruit">Jackfruit</option>
+        <option value="lychee">Lychee</option>
+        <option value="durian">Durian</option>
+    </select>
+
+
+
+    <!-- Include jQuery and Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize Select2 elements
+            $('#multiSelect').select2({
+                placeholder: "Select fruits",
+                allowClear: true
+            });
+
+            $('#searchSelect').select2({
+                placeholder: "Select a mode of transport",
+                allowClear: true
+            });
+        });
+    </script>
+</body>
+
+</html>
